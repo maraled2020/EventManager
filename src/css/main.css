@@ -1,0 +1,71 @@
+#header {
+	border-style: double;
+	border-width: 10px;
+	border-color: red;
+	height: 10%;
+	background-color: black;
+	color: #2EF;
+}
+#content {
+	height: 90%;
+	background-color: blue;
+	color: black;
+	border-style: solid;
+	border-width: 10px;
+	border-color: yellow;
+}
+
+#rotateR_Button {
+	height: 10%;
+	width: 10%;
+	background-color: #ccc;
+}
+#rotateL_Button{
+	height: 10%;
+	width: 10%;
+	background-color: #ccc;
+	
+}
+
+#rotateR_Button:active {
+	background-color: #245622;
+}
+#rotateL_Button:active{
+	background-color: #245622;
+	
+}
+
+html, body {
+	height: 100%;
+	width: 100%;
+},
+
+body {
+	margin-right: 8px;
+}
+
+.rotateR {
+	-webkit-animation: rotationR 3s;
+	-webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotationR {
+0% {-webkit-transform: rotate3d(0,1,0,0deg);}
+25% {-webkit-transform: rotate3d(0,1,0,90deg);}
+50% {-webkit-transform: rotate3d(0,1,0,180deg);}
+75% {-webkit-transform: rotate3d(0,1,0,270deg);}
+100% {-webkit-transform: rotate3d(0,1,0,360deg);}
+}
+
+.rotateL {
+	-webkit-animation: rotationL 5s;
+	-webkit-animation-iteration-count: 1;
+}
+
+@-webkit-keyframes rotationL {
+0% {-webkit-transform: rotate3d(0,1,0,360deg);}
+25% {-webkit-transform: rotate3d(0,1,0,270deg);}
+50% {-webkit-transform: rotate3d(0,1,0,180deg);}
+75% {-webkit-transform: rotate3d(0,1,0,90deg);}
+100% {-webkit-transform: rotate3d(0,1,0,0deg);}
+}
