@@ -24,7 +24,7 @@
 	height: 10%;
 	width: 10%;
 	background-color: #ccc;
-	
+
 }
 
 #rotateR_Button:active {
@@ -32,7 +32,7 @@
 }
 #rotateL_Button:active{
 	background-color: #245622;
-	
+
 }
 
 html, body {
@@ -45,27 +45,27 @@ body {
 }
 
 .rotateR {
-	-webkit-animation: rotationR 3s;
+	-webkit-animation: rotationR 10s;
 	-webkit-animation-iteration-count: 1;
 }
 
 @-webkit-keyframes rotationR {
-0% {-webkit-transform: rotate3d(0,1,0,0deg);}
-25% {-webkit-transform: rotate3d(0,1,0,90deg);}
-50% {-webkit-transform: rotate3d(0,1,0,180deg);}
-75% {-webkit-transform: rotate3d(0,1,0,270deg);}
-100% {-webkit-transform: rotate3d(0,1,0,360deg);}
+0% {-webkit-transform: rotate3d(0,0,1,0deg);}
+25% {-webkit-transform: rotate3d(0,0,1,90deg);}
+50% {-webkit-transform: rotate3d(0,0,1,180deg);}
+75% {-webkit-transform: rotate3d(0,0,1,270deg);}
+100% {-webkit-transform: rotate3d(0,0,1,360deg);}
 }
 
 .rotateL {
-	-webkit-animation: rotationL 5s;
+	-webkit-animation: rotationL 10s;
 	-webkit-animation-iteration-count: 1;
 }
 
 @-webkit-keyframes rotationL {
-0% {-webkit-transform: rotate3d(0,1,0,360deg);}
-25% {-webkit-transform: rotate3d(0,1,0,270deg);}
-50% {-webkit-transform: rotate3d(0,1,0,180deg);}
-75% {-webkit-transform: rotate3d(0,1,0,90deg);}
-100% {-webkit-transform: rotate3d(0,1,0,0deg);}
+0% {-webkit-transform: rotate3d(0,0,1,360deg);}
+25% {-webkit-transform: rotate3d(0,0,1,270deg);}
+50% {-webkit-transform: rotate3d(0,0,1,180deg);}
+75% {-webkit-transform: rotate3d(0,0,1,90deg);}
+100% {-webkit-transform: rotate3d(0,0,1,0deg);}
 }

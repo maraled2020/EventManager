@@ -1,21 +1,19 @@
 
 var eventManagerMainFunction = function () {
 	var $header = $('#header');
-	
+
 	$('#rotateR_Button').click(function () {
-		if ($header.hasClass('rotateR')){
-			$header.removeClass('rotateR');
-		}
+		$header.removeClass('rotateR');
+		$header.removeClass('rotateL');
 		setTimeout(function (){
-			$header.addClass('rotateR');		
+			$header.addClass('rotateR');
 		}, 200);
 	});
 	$('#rotateL_Button').click(function () {
-		if ($header.hasClass('rotateL')){
-			$header.removeClass('rotateL');
-		}
+		$header.removeClass('rotateL');
+		$header.removeClass('rotateR');
 		setTimeout(function (){
-			$header.addClass('rotateL');		
+			$header.addClass('rotateL');
 		}, 200);
 	});
 }
